@@ -6,14 +6,6 @@ import org.assertj.core.api.Assertions;
 public class GildedRoseTest{
 
   @Test
-  public void TestToString(){
-    Item[] items= new Item[] { new Item("Aged Brie", 6, 10) };
-    GildedRose test = new GildedRose(items);
-    test.toString();
-    assertEquals("Aged Brie", test.items[0].name);
-  }
-
-  @Test
   public void Updatest(){
     Item[] cocoitems= new Item[] { new Item("coco", 3, 10),
      new Item("Backstage passes to a TAFKAL80ETC concert",9,25),
