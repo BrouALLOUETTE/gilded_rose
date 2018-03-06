@@ -3,7 +3,7 @@ package gildedrose;
 import static org.junit.Assert.*;
 import org.junit.Test;
 import org.assertj.core.api.Assertions;
-public class GildedRoseTest2{
+public class GildedRoseTTest{
 
   @Test
   public void TestToString(){
@@ -18,7 +18,7 @@ public class GildedRoseTest2{
     Item[] cocoitems= new Item[] { new Item("coco", 3, 10),
      new Item("Backstage passes to a TAFKAL80ETC concert",9,25),
      new Item("Backstage passes to a TAFKAL80ETC concert",4,25),
-     new Item("Aged Brie",1,80),
+     new Item("Aged Brie",1,50),
      new Item("Sulfuras, Hand of Ragnaros",4,25),
      new Item("coco",-1, 1),
      new Item("Backstage passes to a TAFKAL80ETC concert",-1,5),
