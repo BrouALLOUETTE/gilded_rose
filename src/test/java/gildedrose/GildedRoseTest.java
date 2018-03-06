@@ -21,8 +21,9 @@ public class GildedRoseTest{
      new Item("Backstage passes to a TAFKAL80ETC concert",4,25),
      new Item("Aged Brie",1,80),
      new Item("Sulfuras, Hand of Ragnaros",4,25),
-     new Item("coco",-1, 1),};
-     new Item("Aged Brie",1,5),
+     new Item("coco",-1, 1),
+     new Item("Backstage passes to a TAFKAL80ETC concert",-1,5),
+     new Item("Aged Brie",1,5)};
     GildedRose testcoco = new GildedRose(cocoitems);
     testcoco.updateQuality();
     assertEquals(9, testcoco.items[0].quality);
@@ -31,6 +32,8 @@ public class GildedRoseTest{
     assertEquals(0, testcoco.items[3].sellIn);
     assertEquals(25, testcoco.items[4].quality);
     assertEquals(0, testcoco.items[5].quality);
+    assertEquals(0, testcoco.items[6].quality);
+    assertEquals(6, testcoco.items[7].quality);
 
   }
 }
