@@ -55,6 +55,8 @@ class GildedRoseT {
         			else{
         				items[i].quality = items[i].quality - 1;
         			}
+        		}else{
+        			items[i].quality = items[i].quality - 1;
         		}
         	}
         	
