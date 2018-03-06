@@ -6,10 +6,9 @@ import org.assertj.core.api.Assertions;
 public class GildedRoseTest{
 
   @Test
-  public void TestName(){
+  public void TestToString(){
     Item[] items= new Item[] { new Item("Aged Brie", 6, 10) };
     GildedRose test = new GildedRose(items);
-    test.updateQuality();
     test.toString();
     assertEquals("Aged Brie", test.items[0].name);
   }
@@ -23,7 +22,7 @@ public class GildedRoseTest{
      new Item("Sulfuras, Hand of Ragnaros",4,25),
      new Item("coco",-1, 1),
      new Item("Backstage passes to a TAFKAL80ETC concert",-1,5),
-     new Item("Aged Brie",1,5)};
+     new Item("Aged Brie",5,5)};
     GildedRose testcoco = new GildedRose(cocoitems);
     testcoco.updateQuality();
     assertEquals(9, testcoco.items[0].quality);
@@ -34,6 +33,5 @@ public class GildedRoseTest{
     assertEquals(0, testcoco.items[5].quality);
     assertEquals(0, testcoco.items[6].quality);
     assertEquals(6, testcoco.items[7].quality);
-
   }
 }
